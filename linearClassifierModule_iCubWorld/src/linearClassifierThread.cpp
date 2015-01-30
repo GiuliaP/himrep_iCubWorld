@@ -186,7 +186,7 @@ bool linearClassifierThread::trainClassifiers()
                 }
             }
 
-            printf("[RLS] nClass: %d nPositive: %d nNegative: %d\n",knownObjects.size(),Features[idx_curr_obj].size(),n-Features[idx_curr_obj].size());
+            printf("[RLS] nClass: %lu nPositive: %lu nNegative: %lu\n",knownObjects.size(),Features[idx_curr_obj].size(),n-Features[idx_curr_obj].size());
 
             rlsmodel.trainModel(X,Y);
             linearClassifiers_RLS.push_back(rlsmodel);

@@ -3,7 +3,7 @@
 # CopyPolicy: Released under the terms of the GNU GPL v2.0.
 cmake_minimum_required(VERSION 2.6)
 
-set(projectname linearClassifierModule_giulia)
+set(projectname linearClassifierModule_iCubWorld)
 project(${projectname})
 
 include(FindLibSVMLin.cmake)
@@ -26,6 +26,7 @@ set(folder_source ${folder_source} src/linearClassifierThread.cpp
 #add library specific sources
 
 IF(Gurls_FOUND)
+  message($Gurls_FOUND) 
   add_definitions(-DGURLS_AVAILABLE=1)
   add_definitions(${Gurls_DEFINITIONS})
   set(folder_header ${folder_header} include/RLSLinear.h)                                    

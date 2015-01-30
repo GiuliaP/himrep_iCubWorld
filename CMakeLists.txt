@@ -1,6 +1,7 @@
-# Copyright: 2013 iCub Facility
-# Author: Sean Ryan Fanello, Carlo Ciliberto
+# Copyright: 2014 iCub Facility - Istituto Italiano di Tecnologia
+# Authors: Sean Ryan Fanello, Carlo Ciliberto, Giulia Pasquale
 # CopyPolicy: Released under the terms of the GNU GPL v2.0.
+
 cmake_minimum_required(VERSION 2.6)
 
 project(himrep_giulia)
@@ -16,8 +17,9 @@ include(ICUBcontribHelpers)
 include(ICUBcontribOptions)
 icubcontrib_set_default_prefix()
 
-add_subdirectory(linearClassifierModule_giulia)
-add_subdirectory(sparseCoder_giulia)
+add_subdirectory(linearClassifierModule_iCubWorld)
+add_subdirectory(caffeCoder_iCubWorld)
+#add_subdirectory(sparseCoder_iCubWorld)
 
 icubcontrib_add_uninstall_target()
 

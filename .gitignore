@@ -22,3 +22,7 @@
 
 # Build products
 /build*/
+
+#Eclipse project files
+*.project
+*.cproject

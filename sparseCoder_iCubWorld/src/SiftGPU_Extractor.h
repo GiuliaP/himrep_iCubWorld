@@ -10,8 +10,8 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/features2d/features2d.hpp>
 
-#define NOMINMAX
-#include <Windows.h>
+// #define NOMINMAX
+// #include <Windows.h>
 #include "GL/gl.h"
 
 //#if !defined(SIFTGPU_STATIC) && !defined(SIFTGPU_DLL_RUNTIME)
