@@ -133,7 +133,7 @@ CaffeFeatExtractor<Dtype>::CaffeFeatExtractor(string _pretrained_binary_proto_fi
 	  }
 
 	  // Set phase (train or test)
-	  Caffe::set_phase(Caffe::TEST);
+	  //Caffe::set_phase(Caffe::TEST);
 
 	  // Assign parameters
 
@@ -141,7 +141,7 @@ CaffeFeatExtractor<Dtype>::CaffeFeatExtractor(string _pretrained_binary_proto_fi
 	  feature_extraction_proto_file = _feature_extraction_proto_file;
 
 	  // Network creation using the given .prototxt for the structure
-	  feature_extraction_net = boost::make_shared<Net<Dtype> > (feature_extraction_proto_file);
+	  feature_extraction_net = boost::make_shared<Net<Dtype> > (feature_extraction_proto_file, caffe::TEST);
 
 	  // Network initialization using the given .caffemodel for the weights
 	  feature_extraction_net->CopyTrainedLayersFrom(pretrained_binary_proto_file);
