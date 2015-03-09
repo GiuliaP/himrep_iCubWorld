@@ -26,7 +26,6 @@ set(folder_source ${folder_source} src/linearClassifierThread.cpp
 #add library specific sources
 
 IF(Gurls_FOUND)
-  message($Gurls_FOUND) 
   add_definitions(-DGURLS_AVAILABLE=1)
   add_definitions(${Gurls_DEFINITIONS})
   set(folder_header ${folder_header} include/RLSLinear.h)                                    

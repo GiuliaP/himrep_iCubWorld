@@ -4,7 +4,7 @@
 
 cmake_minimum_required(VERSION 2.6)
 
-project(himrep_giulia)
+project(himrep_iCubWorld)
 
 find_package(YARP REQUIRED)
 find_package(ICUB REQUIRED)

@@ -534,7 +534,7 @@ int main(int argc, char *argv[])
 
    ResourceFinder rf;
    rf.setVerbose(true);
-   rf.setDefaultContext("himrep_giulia");
+   rf.setDefaultContext("himrep_icubworld");
    rf.setDefaultConfigFile("caffeCoder.ini");
    rf.configure(argc,argv);
    rf.setDefault("name","caffeCoder");

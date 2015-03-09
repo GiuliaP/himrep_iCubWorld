@@ -3,7 +3,7 @@
 # CopyPolicy: Released under the terms of the GNU GPL v2.0.
 cmake_minimum_required(VERSION 2.8)
 
-project(caffeCoder_iCubWorld)
+project(caffeCoder)
 
 add_subdirectory(src)
 add_subdirectory(app)
