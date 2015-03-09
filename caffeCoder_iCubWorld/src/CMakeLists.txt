@@ -4,7 +4,7 @@
 
 cmake_minimum_required(VERSION 2.8.8)
 
-set(PROJECTNAME caffeCoder)
+set(PROJECTNAME caffeCoder_iCubWorld)
 project(${PROJECTNAME})
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR})
